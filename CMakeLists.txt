@@ -36,6 +36,8 @@ pico_sdk_init()
 # Add executable. Default name is the project name, version 0.1
 
 add_executable(embarcatech-interrupcao embarcatech-interrupcao.c )
+pico_generate_pio_header(embarcatech-interrupcao ${CMAKE_CURRENT_LIST_DIR}/matriz_leds.pio)
+
 
 pico_set_program_name(embarcatech-interrupcao "embarcatech-interrupcao")
 pico_set_program_version(embarcatech-interrupcao "0.1")
@@ -46,6 +48,9 @@ pico_enable_stdio_usb(embarcatech-interrupcao 1)
 
 # Add the standard library to the build
 target_link_libraries(embarcatech-interrupcao
+        hardware_adc
+        hardware_pio
+        hardware_clocks
         pico_stdlib)
 
 # Add the standard include files to the build
