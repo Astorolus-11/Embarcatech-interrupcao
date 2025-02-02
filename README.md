@@ -6,7 +6,7 @@
 2. [Vídeo de demonstração](#3--Vídeo--de--demonstração)
 3. [Funcionalidades ](#4--Funcionalidades)
 4. [Técnicas utilizadas ](#4--Técnicas--utilizadas)
-5. [🧰 Pré-requisitos para executar](#5--pré-requisitos-para-executar)
+5. [Pré-requisitos para executar](#5--pré-requisitos-para-executar)
 
 ## 1. Propósito
 O objetivo desse projeto é demonstrar domínio sobre a linguagem C, manipular portas GPIO, tratar debouncing e interrupções. A atividade foi proposta como um meio de avaliação desses conhecimentos.
