@@ -13,6 +13,9 @@ const uint led_vermelho = 13;
 const uint intervalo_led_vermelho = 100; 
 const uint botao_a = 5;
 const uint botao_b = 6;
+//Pino da matriz de leds
+#define pin_matrix 7
+static volatile uint32_t last_time=0;
 
 //Desenho dos números da matriz de leds:
 double numeros[10][25]={
@@ -82,17 +85,14 @@ double numeros[10][25]={
 //Quantidade de pixels/leds
 #define pixels 25
 
-//Pino da matriz de leds
-#define pin_matrix 7
-
 // Protótipos das funções
 void setup(); 
 static void gpio_irq_handler(uint gpio, uint32_t events);
 //static void gpio_irq_handler_decrement(uint gpio, uint32_t events);
 uint32_t intensidade(double b, double r, double g);
 static volatile uint a=0;
-static volatile uint32_t last_time=0;
 void desenhar(uint num);
+
 //PIO
 static PIO pio;
 static uint sm;
