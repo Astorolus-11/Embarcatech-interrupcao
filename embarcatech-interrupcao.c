@@ -165,7 +165,7 @@ uint32_t intensidade(double b, double r, double g){
 }
 
 
-void gpio_irq_handler(uint gpio, uint32_t events){ // Função para incrementar
+void gpio_irq_handler(uint gpio, uint32_t events){ // Função para incrementar e decrementar
 
     uint32_t tempo_atual=to_us_since_boot(get_absolute_time()); // pega o tempo absoluto desde o inicio do boot,
     // ou seja o tempo desde o inicio do sistema
