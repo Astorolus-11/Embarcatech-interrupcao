@@ -13,6 +13,7 @@ O objetivo desse projeto é demonstrar domínio sobre a linguagem C, manipular p
 
 
 ## 2. Vídeo de demonstração
+https://www.dropbox.com/scl/fi/vqa5v6cjlrym9oahamex0/WhatsApp-Video-2025-02-02-at-01.45.31.mp4?rlkey=cq2ydw7n94opav9f7nkf4plop&st=0c0252oj&dl=0
 
 ## 3. Funcionalidades
 - O LED vermelho do RGB pisca 5 vezes por segundo no loop da função principal;
